@@ -5,10 +5,10 @@ import { users } from "../assets/users";
 
 export default function ProfilePage() {
   const { id } = useParams();
-  console.log('Param ID -> ', id);
+  console.log(id);
 
   const userData = users.find(user => user.id == id);
-  console.log('USER INFO => ', userData);
+  console.log( userData);
 
   if (!userData) return <h1>Profile Not Found!</h1>
   
